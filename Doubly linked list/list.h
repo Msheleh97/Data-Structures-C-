@@ -4,7 +4,7 @@
  * Doubly linked list
  *
  * @author  Mohammad Mshaleh
- * @since   2020-11-21
+ * @since   2019-11-21
  *
  * @{
  */
