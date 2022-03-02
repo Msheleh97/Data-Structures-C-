@@ -3,8 +3,8 @@
 #include "array.h"
 
 
-Array *array_create(int n1, int n2)
-{
+Array *array_create(int n1, int n2){
+  
   Array *p = (Array*)malloc (sizeof(Array));
 
   if (p == 0){
@@ -19,38 +19,32 @@ Array *array_create(int n1, int n2)
 
 
 
-void array_destroy(Array *arr)
-{
+void array_destroy(Array *arr){
   free (arr->data);
   free(arr);
 }
 
 
-int array_rows(const Array *arr)
-{
+int array_rows(const Array *arr){
   return arr -> n1;
 }
 
 
-int array_columns(const Array *arr)
-{
+int array_columns(const Array *arr){
   return arr -> n1;
 }
 
 
-int array_get(const Array *arr, int i1, int i2)
-{
+int array_get(const Array *arr, int i1, int i2){
+  
   int row, position, num;
   row = array_rows(arr);
   position = row * i1 + i2;
-
-  num = *(arr-> data + position);
-
-  return num;
+  return *(arr-> data + position);
 }
 
-void array_set(Array *arr, int i1, int i2, int value)
-{
+void array_set(Array *arr, int i1, int i2, int value){
+  
   int row, position ;
   row = array_rows(arr);
   position = row * i1 + i2;
