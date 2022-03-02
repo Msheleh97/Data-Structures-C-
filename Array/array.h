@@ -13,8 +13,7 @@
 
 
 /** The type for a 2D array.*/
-typedef struct array
-{
+typedef struct array{
     int n1;
     int n2;
     int *data;
