@@ -2,7 +2,7 @@
  * Stack
  *
  * @author  Mohammad Mshaleh
- * @since   2021-01-02
+ * @since   2019-12-12
  *
  * @{
  */
@@ -12,8 +12,7 @@
 #include <stdbool.h>
 
 /** The type for a stack*/
-typedef struct stack
-{
+typedef struct stack{
     int capacity;
     int size;
     double *data;
