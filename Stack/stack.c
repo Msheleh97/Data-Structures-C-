@@ -20,7 +20,6 @@ Stack *stack_create(void){
 void stack_destroy(Stack *s){
   free (s->data);
   free (s);
-
 }
 
 void stack_push(Stack *s, double value){
@@ -46,7 +45,5 @@ bool stack_is_empty(const Stack *s){
   if (s->size == -1){
     return true;
   }
-  else {
-    return false;
-  }
+  return false;
 }
